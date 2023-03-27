@@ -4,11 +4,10 @@
     padding: 0;
 }
 img {
-    width: 300px;
+    width: 250px;
 }
 
 
-@media (max-width: 1000px) {
   .mainBox{
     width: 100%;
     height: 100%;
@@ -16,29 +15,34 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
   }
-  .divWelcome {
-      width: 60%;
-      text-align: center;
+  .divGroupWelcome {
+   
+    text-align: center;
+    width: 250px;
 
+  }
+  .divGroupForm {
+    text-align: center;
+        width: 250px;
   }
   .divForm{
-    width: 60%;
+    width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 20px;
-    border: 3px solid #000;
-    border-radius: 8px;
-
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: -1px 1px 3px 1px rgb(167, 167, 167);
+    background-color: #fff;
   }
 .divAds{
     margin-top: 14px;
-    width: 80%;
+    width: 100%;
     text-align: center;
     font-size: 12px;
+    margin-bottom: 150px;
 }
 .eleInForm{
     margin-top: 8px;
@@ -46,26 +50,73 @@ img {
 
 .btnLogin{
     width: 95%;
-    height: 30px;
     border: 1px solid #3b5998;
-    border-radius: 8px;
     background-color: #3b5998;
     color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
   }
+
 .btnReg{
-    margin-bottom: 8px;
     width: 40%;
-    height: 30px;
     border: 1px solid #60c755;
-    border-radius: 8px;
     background-color: #60c755;
     color: #fff;
+    margin-bottom: 8px;
+}
+.footerBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.footerBoxHi{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top:15px;
+    margin-left: 15px;
+    /* background-color: rgb(61, 202, 56); */
+    font-size: 10px;
+}
+
+.footerBoxMiddle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    /* background-color: rgb(61, 202, 56); */
+    font-size: 10px;
+}
+.footerBoxLow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    /* background-color: rgb(61, 202, 56); */
+    font-size: 10px;
+}
+
+
+button{
+    height: 30px;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 5px;
 }
   
 input {
@@ -73,14 +124,14 @@ input {
     margin :auto;
     width: 95%;
     height: 30px;
-    border: 1px solid #000;
-    border-radius: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
   }
+
   hr {
+    margin-top: 10px;
       border: 0;
-      clear: both;
-      display: block;
-      width: 96%;
+      width: 100%;
       background-color: gray;
       height: 1px;
   }
@@ -88,8 +139,41 @@ input {
     text-decoration: none;
     font-size: 10px;
   }
+  ul {
+      list-style-type: none;
+  }
+  li{
+    display: inline;
+    margin-left: 3px;
+    
+  }
+
    
-}
-@media (max-width: 800px) {
+
+@media (min-width: 800px) {
+
+    .mainBox {
+            width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: center;
+        }
+    .divGroupWelcome {
+        text-align: left;
+        width: 250px;
+        margin-left: 200px;
+    }
+    .divGroupForm {
+        margin-left: 180px;
+        margin-top: 20vh;
+    }
+
+    .divTextWelcome {
+        font-size: 14px;
+        width: 300px;
+        padding-left: 20px;
+    }
    
 }
